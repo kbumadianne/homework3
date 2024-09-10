@@ -1,7 +1,16 @@
 # homework3
 python-challenge
-Analysis folders contain py and txt files for correct code and text files.
+Analysis folders contain txt files.
+PyBank folder main.py is the python code PyBank
+PyPoll folder main.py is the python code for PyPoll
 
+Printing in terminal may give an error due to the "file_to_load" path.  This worked fine in VS and Jupyter Notebook scripts, however in Git Bash it needs "PyPoll" removed in the line of code (See Below)
+PyPoll file main.py code in line 25 file_to_load = os.path.join("PyPoll","Resources","election_data.csv")
+Only solve I could find was providing the absolute path, which was going to error out the code when anyone else ran it, please let me know if there's another solution.  This was the file hierarchy that was outlined in the requirements.
+
+Printing in terminal may give an error due to the "file_to_load" path.  This worked fine in VS and Jupyter Notebook scripts, however in Git Bash it needs "PyBank" removed in the line of code (See Below)
+PyBank file main.py code in line 20 file_to_load = os.path.join("PyBank/Resources/budget_data.csv")
+Only solve I could find was providing the absolute path, which was going to error out the code when anyone else ran it, please let me know if there's another solution.  This was the file hierarchy that was outlined in the requirements.
 
 PyBank Challenge code explanation:
 First I am importing the CSV file and setting the path for import as well as setting up the file export path 
